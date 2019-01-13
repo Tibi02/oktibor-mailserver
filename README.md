@@ -26,3 +26,23 @@ Port | Purpose
 993 | IMAPS - alternative port for IMAP encrypted since connection
 995 | POP3S - encrypted POP3 since connections
 4190 | Sieve - remote sieve settings
+
+## Client settings
+
+#### SMTP
+* host: mail.oktibor.com
+* port: 587 (465 alternatively)
+* SSL/TLS with authentication required
+* username is whole email address username@example.com
+
+#### IMAP (preferred)
+* host: mail.oktibor.com
+* port: 993
+* SSL/TLS
+* username is whole email address username@example.com
+
+#### POP3
+* host: mail.oktibor.com
+* port: 995
+* SSL/TLS
+* username is whole email address username@example.com
