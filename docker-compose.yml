@@ -1,0 +1,28 @@
+version: '3.5'
+
+services:
+  poste.io:
+    image: analogic/poste.io
+    restart: always
+    container_name: poste.io
+    hostname: mail.oktibor.com
+    environment:
+      VIRTUAL_HOST: poste.oktibor.com
+      VIRTUAL_PORT: 80
+      HTTPS: OFF
+    volumes:
+       - /disk/docker/poste.io:/data
+    networks:
+      - nginx
+    ports:
+      - "25:25"
+      - "465:465"
+      - "587:587"
+      - "110:110"
+      - "143:143"
+      - "993:993"
+      - "995:995"
+
+networks:
+  nginx:
+   external: true
