@@ -7,7 +7,7 @@ services:
     container_name: poste.io
     hostname: mail.oktibor.com
     environment:
-      VIRTUAL_HOST: poste.oktibor.com
+      VIRTUAL_HOST: poste.oktibor.com,mail.oktibor.com
       VIRTUAL_PORT: 80
       HTTPS: OFF
     volumes:
